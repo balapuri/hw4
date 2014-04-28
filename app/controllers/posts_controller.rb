@@ -33,6 +33,7 @@ class PostsController < ApplicationController
 			redirect_to @post
 		else
 			render 'edit'
+		end
 	end
 	
 	def destroy
@@ -41,7 +42,6 @@ class PostsController < ApplicationController
  
 		redirect_to posts_path
 	end
-end
 	
 	private
 		def post_params
